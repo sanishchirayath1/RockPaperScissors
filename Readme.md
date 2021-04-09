@@ -1,0 +1,1 @@
+This is a basic "rock paper scissors game" which you can play on your browsers console
