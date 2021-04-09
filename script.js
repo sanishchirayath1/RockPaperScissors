@@ -6,8 +6,11 @@ function computerPlay() {
 let playerScore = 0;
 let computerScore = 0;
 
+window.alert("You have 5 tries to win the game,\n If you mis-spell you will be given another chance to play,\n draw : 0.5 point,\n win : 1 point, \n loss : 0 point \n Click ok to play")
+
 function playRound() {
 
+ 
  const playerSelection = window.prompt("Rock, Paper, Scissors..What is your choice?");
  const computerSelection = computerPlay();
 
