@@ -21,38 +21,38 @@ function playRound() {
     if (player === computer){
         playerScore += 0.5;
         computerScore += 0.5;
-         return "It is a tie"
+        alert("It is a tie,\n your score : " + playerScore + "  computer score : " + computerScore);
     }
 
     else if (player === "rock" && computer === "paper"){  
         computerScore += 1;
-        return "You loses, Paper beats Rock"
+        alert("You loses, Paper beats Rock,\n your score : " + playerScore + "  computer score : " + computerScore);
 
     }
     
     else if (player === "rock" && computer === "scissors"){
         playerScore += 1;
-        return "You Wins, Rock beats Scissors"
+        alert("You Wins, Rock beats Scissors,\n your score : " + playerScore + "  computer score : " + computerScore);
     }
     
     else if (player === "paper" && computer === "rock"){
         playerScore += 1;
-        return "You Wins, Paper beats rock"
+        alert("You Wins, Paper beats rock,\n your score : " + playerScore + "  computer score : " + computerScore);
     }
 
     else if (player === "paper" && computer === "scissors"){
-        computerScore += 1
-        return "You loses, Scissors beats Paper"
+        computerScore += 1;
+        alert("You loses, Scissors beats Paper,\n your score : " + playerScore + "  computer score : " + computerScore);
     }
     
     else if (player === "scissors" && computer === "paper"){
         playerScore += 1;
-        return "You Wins, Scissors beats Paper"
+         alert("You Wins, Scissors beats Paper,\n your score : " + playerScore + "  computer score : " + computerScore);
     }
     
     else if (player === "scissors" && computer === "rock"){
-        computerScore += 1
-        return "You loses, Rock beats Scissors"
+        computerScore += 1;
+        alert("You loses, Rock beats Scissors,\n your score : " + playerScore + "  computer score : " + computerScore);
 
     }else {
     //another trial if spelling is wrong
@@ -70,16 +70,16 @@ function playRound() {
     
         for (let i = 0; i < 5; i++) {
             console.log(playRound());
-            window.alert("your score : " + playerScore + "  computer score : " + computerScore);
+
         }
         
             if (playerScore > computerScore) {
-               window.alert("You Won the game, your score : " + playerScore + "  computer score : " + computerScore);
+               window.alert("You Won the game,\n your score : " + playerScore + "  computer score : " + computerScore);
             }       
             else if(playerScore < computerScore){
-                window.alert("You lose the game, your score : " + playerScore + "  computer score : " + computerScore);
+                window.alert("You lose the game,\n your score : " + playerScore + "  computer score : " + computerScore);
             }else{
-                window.alert("You've drawn the game, your score : " + playerScore + "  computer score : " + computerScore);
+                window.alert("You've drawn the game,\n your score : " + playerScore + "  computer score : " + computerScore);
                
             }
            
