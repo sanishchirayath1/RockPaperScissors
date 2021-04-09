@@ -8,7 +8,7 @@ let computerScore = 0;
 
 function playRound() {
 
- const playerSelection = prompt("Rock, Paper, Scissors..What is your choice?");
+ const playerSelection = window.prompt("Rock, Paper, Scissors..What is your choice?");
  const computerSelection = computerPlay();
 
 
@@ -55,7 +55,9 @@ function playRound() {
         return "You loses, Rock beats Scissors"
 
     }else {
-     return  "Check the spelling"
+    //another trial if spelling is wrong
+       playRound()
+    
     }
 
   }
@@ -68,16 +70,17 @@ function playRound() {
     
         for (let i = 0; i < 5; i++) {
             console.log(playRound());
-
+            window.alert("your score : " + playerScore + "  computer score : " + computerScore);
         }
-        console.log("you :" ,playerScore ," | computer :", computerScore);
+        
             if (playerScore > computerScore) {
-                console.log("%cYou Won the game","color:green;font-size: 40px");
+               window.alert("You Won the game, your score : " + playerScore + "  computer score : " + computerScore);
             }       
             else if(playerScore < computerScore){
-                console.log("%cYou lose the game","color:red;font-size: 40px");
+                window.alert("You lose the game, your score : " + playerScore + "  computer score : " + computerScore);
             }else{
-                console.log("%cYou've drawn the game","color:orange;font-size: 40px");
+                window.alert("You've drawn the game, your score : " + playerScore + "  computer score : " + computerScore);
+               
             }
            
     playerScore = 0;
