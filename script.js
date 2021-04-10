@@ -6,7 +6,7 @@ function computerPlay() {
 let playerScore = 0;
 let computerScore = 0;
 
-window.alert("You have 5 tries to win the game,\n If you mis-spell you will be given another chance to play,\n draw : 0.5 point,\n win : 1 point, \n loss : 0 point \ntype in rock or paper or scissors  \n Click ok to play")
+window.alert("You have 5 tries to win the game,\n If you mis-spell you will be given another chance to play,\n draw : 0.5 point,\n win : 1 point, \n loss : 0 point \nType rock or paper or scissors IN THE TEXT BOX  \n Click ok to play")
 
 function playRound() {
 
